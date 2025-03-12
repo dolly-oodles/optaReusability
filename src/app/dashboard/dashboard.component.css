@@ -28,3 +28,13 @@
 
     color: rgb(34, 33, 33);
     }
+    .logout-btn{    
+    padding: 0 10px;
+    background: #03283E !important;
+    border-color: transparent;
+    color: rgb(255, 255, 255) ;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    }
