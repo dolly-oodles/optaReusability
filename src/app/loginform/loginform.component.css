@@ -1,0 +1,107 @@
+ .container {
+    background-image: linear-gradient(to right bottom, #3598d3, rgba(53, 152, 211, .3803921569));
+    
+  font-family: "Poppins", sans-serif;
+    }
+    .authentication-main-container{
+            font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh + -0px);
+     
+  font-family: "Poppins", sans-serif;
+    }
+    .authentication-wrapper-container{
+    width: 500px;
+    border: 1px;
+    padding: 30px;
+    border-radius: 14px;
+    background: rgb(255, 255, 255);
+
+  font-family: "Poppins", sans-serif;
+}
+.authentication-wrapper-container p{
+    text-align: center;
+  
+}
+.authentication-wrapper-container a{
+      text-decoration: none;
+    color: rgb(13, 110, 253);
+    cursor: pointer;
+}
+.form-group-container {
+    position: relative;
+}
+.form-group-container label {
+    margin: 10px 0;
+}
+label{
+    font-size: 14px;
+    display: inline-block;
+}
+.form-group-container input {
+    padding: 11px 16px !important;
+}
+.form-control {
+    box-shadow: 2px 2px 2px #dedede;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color:#fff;
+    background-clip: padding-box;
+    border:1px solid #dedede;
+    border-radius: .375rem;
+    transition:#dedede .15s ease-in-out, 0 .5rem 1rem rgba(0, 0, 0, .15), .15s ease-in-out;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+
+  font-family: "Poppins", sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+}
+.button-div{
+margin: 15px 0;
+}
+.button-div button{
+    width: 100%;
+    justify-content: center;
+    background: #03283E !important;
+    border-color: transparent;
+    padding: 14px 10px;
+    color: rgb(255, 255, 255) ;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+.bg-img{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+    .bg-img div {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L4VV7Z90UfsrFx1yynmdbhr91KnwTVxyqYJHe3VuUA&s');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 200px;
+    font-size: 14px;
+
+    filter: contrast(1.5);
+}

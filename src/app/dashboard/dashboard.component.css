@@ -1,0 +1,30 @@
+.navbar {
+        background: #fff;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: flex-end;
+  
+  font-family: "Poppins", sans-serif;
+    }
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar li {
+        padding: 10px 15px;
+        cursor: pointer;
+        /* font-weight: bold; */
+        color: #555;
+        text-decoration: none;
+    }
+ .navbar li:active{
+    color: rgb(19, 18, 18);
+ }
+    .navbar li:hover {
+        cursor: pointer;
+
+    color: rgb(34, 33, 33);
+    }
