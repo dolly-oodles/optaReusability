@@ -23,6 +23,9 @@
  .navbar li:active{
     color: rgb(19, 18, 18);
  }
+  .navbar li .active{
+    color: rgb(19, 18, 18);
+ }
     .navbar li:hover {
         cursor: pointer;
 
