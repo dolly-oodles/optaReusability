@@ -25,10 +25,11 @@ export class LoginformComponent {
         if (this.loginForm.valid) {
             try {
                 const response = await this.authService.login(this.loginForm.value);
-                const token = response.headers.get('Authorization');
+                const token = response?.body.data?.accessToken
 
                 if (token) {
                     localStorage.setItem('authToken', token);
+                    this.loginForm.reset();
                     this.router.navigate(['/dashboard']);
                 } else {
                     console.error('No token received');
