@@ -1,5 +1,5 @@
 export const environment = {
-    production: false,
+    production: true,
     basePath: "https://timefold.demo.oodleslab.com/",
 
 }
