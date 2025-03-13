@@ -1,10 +1,10 @@
 <nav class="navbar">
     <ul>
-        <li class="active">Employee Scheduling</li>
-        <li>Vehicle Routing</li>
-        <li>Load Distribution</li>
-        <li>Call Center Scheduling</li>
-        <li>Time Table Scheduling</li>
+        <li class="active" [routerLink]="['/dashboard/employee-scheduling']">Employee Scheduling</li>
+        <li [routerLink]="['/dashboard/vehicle-routing']">Vehicle Routing</li>
+        <li [routerLink]="['/dashboard/load-distribution']">Load Distribution</li>
+        <li [routerLink]="['/dashboard/call-center-scheduling']">Call Center Scheduling</li>
+        <li [routerLink]="['/dashboard/time-table-scheduling']">Time Table Scheduling</li>
     </ul>
-    <button class="logout-btn" (click)="logout()"> LogOut</button>
+    <button class="logout-btn" (click)="logout()">LogOut</button>
 </nav>
