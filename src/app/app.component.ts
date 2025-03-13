@@ -7,10 +7,4 @@ import { Router, RouterOutlet } from '@angular/router';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
-export class AppComponent {
-    constructor(public router: Router) {
-        this.router.events.subscribe(event => {
-            console.log('Router event:', event);
-        });
-    }
-}
+export class AppComponent { }

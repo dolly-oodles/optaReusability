@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
 @Component({
     selector: 'app-registerform',
@@ -25,9 +25,8 @@ export class RegisterformComponent {
     async onSubmit() {
         if (this.registerForm.valid) {
             try {
-                const response = await this.authService.signUp(this.registerForm.value);
-                console.log('Signup Successful:', response);
-                this.router.navigate(['/login']); // Redirect to login page
+                await this.authService.signUp(this.registerForm.value);
+                this.router.navigate(['/login']);
             } catch (error) {
                 console.error('Signup Failed:', error);
             }
