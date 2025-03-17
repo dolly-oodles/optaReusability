@@ -15,6 +15,7 @@ export const routes: Routes = [
         canActivate: [AuthGuard],
         children: [
             { path: '', redirectTo: 'employee-scheduling', pathMatch: 'full' },
+            { path: 'employee-scheduling', component: DummyComponent },
             { path: 'vehicle-routing', component: DummyComponent },
             { path: 'load-distribution', component: DummyComponent },
             { path: 'call-center-scheduling', component: DummyComponent },
