@@ -1,12 +1,12 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
     selector: 'app-dashboard',
     standalone: true,
-    imports: [RouterLink],
+    imports: [CommonModule, RouterLink, RouterOutlet],
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.css'
 })

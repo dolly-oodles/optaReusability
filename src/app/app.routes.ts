@@ -14,12 +14,12 @@ export const routes: Routes = [
         component: DashboardComponent,
         canActivate: [AuthGuard],
         children: [
-            { path: 'employee-scheduling', component: DummyComponent },
+            { path: '', redirectTo: 'employee-scheduling', pathMatch: 'full' },
             { path: 'vehicle-routing', component: DummyComponent },
             { path: 'load-distribution', component: DummyComponent },
             { path: 'call-center-scheduling', component: DummyComponent },
             { path: 'time-table-scheduling', component: DummyComponent },
-            { path: 'dashboard', redirectTo: 'dashboard/employee-scheduling', pathMatch: 'full' }
+
         ]
     }
 ];
