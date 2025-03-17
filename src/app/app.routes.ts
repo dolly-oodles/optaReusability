@@ -6,8 +6,8 @@ import { AuthGuard } from './auth.guard';
 import { DummyComponent } from './dummy/dummy.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginformComponent },
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'register', component: RegisterformComponent },
     {
         path: 'dashboard',
