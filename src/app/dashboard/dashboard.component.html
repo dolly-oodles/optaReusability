@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
     <ul>
         <li class="active"><a [routerLink]="['/dashboard/employee-scheduling']">Employee Scheduling</a></li>
         <li><a [routerLink]="['/dashboard/vehicle-routing']">Vehicle Routing</a></li>
@@ -9,4 +9,25 @@
     <button class="logout-btn" (click)="logout()">LogOut</button>
 </nav>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<nav class="navbar">
+    <ul>
+        <li class="active">
+            <a (click)="navigateTo(API_URLS.employeeSceduling)">Employee Scheduling</a>
+        </li>
+        <li>
+            <a (click)="navigateTo(API_URLS.vehicleRouting)">Vehicle Routing</a>
+        </li>
+        <li>
+            <a (click)="navigateTo(API_URLS.vehicleRoutingProblem)">Load Distribution</a>
+        </li>
+        <li>
+            <a (click)="navigateTo(API_URLS.callCenter)">Call Center Scheduling</a>
+        </li>
+        <li>
+            <a (click)="navigateTo(API_URLS.timeTable)">Time Table Scheduling</a>
+        </li>
+    </ul>
+    <button class="logout-btn" (click)="logout()">LogOut</button>
+</nav>

@@ -2,6 +2,7 @@ import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { API_URLS } from '../api-urls';
 
 @Component({
     selector: 'app-dashboard',
@@ -11,6 +12,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
     styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+    API_URLS = API_URLS;
     constructor(public authService: AuthenticationService, public router: Router, @Inject(PLATFORM_ID) public platformId: Object) { }
 
     isAuthenticated(): boolean {
@@ -34,6 +36,10 @@ export class DashboardComponent {
         } catch (error) {
             console.error('Logout Failed:', error);
         }
+    }
+
+    navigateTo(url: string) {
+        window.location.href = url; // Redirect to API endpoint
     }
 
 }
