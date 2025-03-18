@@ -30,8 +30,8 @@ export class LoginformComponent {
                 if (token) {
                     localStorage.setItem('authToken', token);
                     this.loginForm.reset();
-                    // this.router.navigate(['/dashboard']);
-                    this.router.navigate([`${window.location.origin}/dashboard`]);
+                    this.router.navigate(['/dashboard']);
+                    // this.router.navigate([`${window.location.origin}/dashboard`]);
 
                 } else {
                     console.error('No token received');
