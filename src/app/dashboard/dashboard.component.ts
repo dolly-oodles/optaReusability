@@ -39,9 +39,9 @@ export class DashboardComponent {
     }
 
     navigateTo(url: string) {
-        console.log(url);
-        window.location.href = url;
-        console.log(window.location.href);
+        // window.location.href = url;
+        this.router.navigate([url]);
+        console.log(this.router.navigate([url]));
     }
 
 }
