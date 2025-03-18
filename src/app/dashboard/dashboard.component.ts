@@ -3,7 +3,6 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { API_URLS } from '../api-urls';
-import { log } from 'console';
 
 @Component({
     selector: 'app-dashboard',
