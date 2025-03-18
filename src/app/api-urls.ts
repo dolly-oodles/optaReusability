@@ -8,9 +8,9 @@ export const API_URLS = {
     // vehicleRoutingProblem: environment.basePath + 'api/vehicleRoutingProblem',
     // callCenter: environment.basePath + 'api/callCenter',
     // timeTable: environment.basePath + 'api/timetable',
-    employeeScheduling: '/api/employeeScheduling',
-    vehicleRouting: '/api/vehicleRouting',
+    employeeScheduling: 'api/employeeScheduling',
+    vehicleRouting: 'api/vehicleRouting',
     vehicleRoutingProblem: '/api/vehicleRoutingProblem',
-    callCenter: '/api/callCenter',
-    timeTable: '/api/timetable',
+    callCenter: 'api/callCenter',
+    timeTable: 'api/timetable',
 };

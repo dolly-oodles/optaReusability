@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { API_URLS } from '../api-urls';
+import { environment } from '../../environment/environment';
 
 @Component({
     selector: 'app-dashboard',
@@ -39,10 +40,8 @@ export class DashboardComponent {
     }
 
     navigateTo(url: string) {
-        // window.location.href = url;
-        this.router.navigate([url])
-        console.log(url);
-
+        window.location.href = environment.basePath + url;
     }
+
 
 }
