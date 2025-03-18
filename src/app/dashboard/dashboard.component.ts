@@ -40,8 +40,8 @@ export class DashboardComponent {
 
     navigateTo(url: string) {
         // window.location.href = url;
-        this.router.navigate([url]);
-        console.log(this.router.navigate([url]));
+        // this.router.navigate([url]);
+        window.open(url, '_blank');
     }
 
 }
