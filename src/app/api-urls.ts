@@ -10,7 +10,7 @@ export const API_URLS = {
     // timeTable: environment.basePath + 'api/timetable',
     employeeScheduling: 'api/employeeScheduling',
     vehicleRouting: 'api/vehicleRouting',
-    vehicleRoutingProblem: '/api/vehicleRoutingProblem',
+    vehicleRoutingProblem: 'api/vehicleRoutingProblem',
     callCenter: 'api/callCenter',
     timeTable: 'api/timetable',
 };
