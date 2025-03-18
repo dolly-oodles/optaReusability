@@ -15,7 +15,6 @@
                     "options": {
                         "outputPath": "dist/login",
                         "index": "src/index.html",
-                        "baseHref": "/",
                         "browser": "src/main.ts",
                         "polyfills": [
                             "zone.js"
